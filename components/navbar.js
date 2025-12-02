@@ -1,9 +1,9 @@
 const navElements = [
-    // La raíz de tu sitio es 'https://pablo21prad-bit.github.io/pablo/'
-    { title: 'Salidas 🚗 ',    link: 'https://pablo21prad-bit.github.io/pablo/pages/salidas/salidas.html' },
-    { title: 'Viajes ✈️',      link: 'https://pablo21prad-bit.github.io/pablo/pages/viajes/viajes.html' },
-    { title: 'Nosotros 👫',    link: 'https://pablo21prad-bit.github.io/pablo/pages/nosotros/nosotros.html' },
-    { title: 'Amor Mio ♥..',    link: 'https://pablo21prad-bit.github.io/pablo/pages/amor/amor.html' },
+    // RUTA CORTA (RELATIVA A LA RAÍZ DEL REPO)
+    { title: 'Salidas 🚗 ',    link: 'pages/salidas/salidas.html' },
+    { title: 'Viajes ✈️',      link: 'pages/viajes/viajes.html' },
+    { title: 'Nosotros 👫',    link: 'pages/nosotros/nosotros.html' },
+    { title: 'Amor Mio ♥..',    link: 'pages/amor/amor.html' },
 ];
 
 export const navbar =  `
