@@ -3,10 +3,7 @@ const PABLO_BASE = "/pablo/";   // raíz del sitio publicado
 export function cardComponent(momento) {
 
   const imagenes = momento.fotos.map((foto, index) => {
-    // saco barras iniciales si las tiene (/assets/...)
-    const pathLimpio = foto.replace(/^\/+/, "");  // queda "assets/...”
-
-    // armo la ruta final: /pablo/assets/lo-que-sea.jpg
+    const pathLimpio = foto.replace(/^\/+/, "");  
     const srcFinal = `${PABLO_BASE}${pathLimpio}`;
 
     return `
@@ -17,7 +14,7 @@ export function cardComponent(momento) {
   }).join("");
 
   return `
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-6">   <!-- ⭐ MÁS GRANDES: 2 por fila -->
       <div class="card shadow-sm">
 
         <div id="${momento.id}" class="carousel slide" data-bs-ride="carousel">
@@ -41,3 +38,4 @@ export function cardComponent(momento) {
     </div>
   `;
 }
+
