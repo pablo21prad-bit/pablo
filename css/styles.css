@@ -1,0 +1,107 @@
+/* ===== FONDO GENERAL ===== */
+
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle at top left, #ffe1ef 0, #fdf8ff 30%, #f3f6ff 60%, #ffe6f0 100%);
+}
+
+/* Para que el contenido no quede pegado a los bordes */
+.page-wrapper {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+/* ===== TITULO DE SECCIÓN ===== */
+.section-momentos {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem 3rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-title span {
+  background: linear-gradient(135deg, #ff4b8b, #ffb347);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border-radius: 1.4rem;
+  overflow: hidden;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.card-body {
+  padding: 1.2rem 1.4rem 1.4rem;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== IMÁGENES DEL CARRUSEL ===== */
+.card-img-top {
+  height: 320px;          /* ajustá si querés más alta */
+  object-fit: cover;
+}
+
+/* Botones del carrusel un poco más suaves */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.7));
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 12%;
+}
+
+/* Pequeño ajuste responsive */
+@media (max-width: 768px) {
+  .section-momentos {
+    padding: 1.8rem 1.2rem 2.3rem;
+  }
+
+  .card-img-top {
+    height: 260px;
+  }
+}
+
+.card-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ff2f6f;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
