@@ -1,14 +1,16 @@
+const base = "/pablo/";
+
 const navElements = [
-    { title: 'Salidas 🚗 ',    link: 'pages/salidas/salidas.html' },
-    { title: 'Viajes ✈️',      link: 'pages/viajes/viajes.html' },
-    { title: 'Nosotros 👫',    link: 'pages/nosotros/nosotros.html' },
-    { title: 'Amor Mio ♥..',    link: 'pages/amor/amor.html' },
+    { title: 'Salidas 🚗 ',   link: base + 'pages/salidas/salidas.html' },
+    { title: 'Viajes ✈️',     link: base + 'pages/viajes/viajes.html' },
+    { title: 'Nosotros 👫',   link: base + 'pages/nosotros/nosotros.html' },
+    { title: 'Amor Mio ♥..', link: base + 'pages/amor/amor.html' },
 ];
 
 export const navbar =  `
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="pages/teamo/teamo.html">Te Amo ♥♥♥</a>   <!-- ACÁ EL ARREGLO -->
+        <a class="navbar-brand" href="${base}pages/teamo/teamo.html">Te Amo ♥♥♥</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarNav" aria-controls="navbarNav" 
             aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +27,4 @@ export const navbar =  `
             </ul>
         </div>
     </div>
-</nav>`;
-
-
+</nav>`
