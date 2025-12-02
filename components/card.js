@@ -14,7 +14,7 @@ export function cardComponent(momento) {
   }).join("");
 
   return `
-    <div class="col-md-6 col-lg-6">   <!-- ⭐ MÁS GRANDES: 2 por fila -->
+    <div class="col-12 col-md-6">
       <div class="card shadow-sm">
 
         <div id="${momento.id}" class="carousel slide" data-bs-ride="carousel">
@@ -38,4 +38,3 @@ export function cardComponent(momento) {
     </div>
   `;
 }
-

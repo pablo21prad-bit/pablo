@@ -1,13 +1,12 @@
 /* ===== FONDO GENERAL ===== */
 
-
 body {
   min-height: 100vh;
   margin: 0;
   background: radial-gradient(circle at top left, #ffe1ef 0, #fdf8ff 30%, #f3f6ff 60%, #ffe6f0 100%);
 }
 
-/* Para que el contenido no quede pegado a los bordes */
+/* ===== CONTENEDOR ===== */
 .page-wrapper {
   padding-top: 3rem;
   padding-bottom: 4rem;
@@ -66,17 +65,28 @@ body {
 }
 
 .card-text {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ff2f6f;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
-/* ===== IMÁGENES DEL CARRUSEL ===== */
+/* ===== IMÁGENES DEL CARRUSEL — SIN RECORTES ===== */
 .card-img-top {
-  height: 320px;          /* ajustá si querés más alta */
-  object-fit: cover;
+  width: 100%;
+  max-height: 380px;       /* Ajustá la altura a gusto */
+  object-fit: contain;     /* La imagen NO se recorta */
+  background-color: #000;  /* Fondo para fotos verticales */
 }
 
-/* Botones del carrusel un poco más suaves */
+/* Mobile */
+@media (max-width: 768px) {
+  .card-img-top {
+    max-height: 300px;
+  }
+}
+
+/* Botones del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: drop-shadow(0 0 4px rgba(0,0,0,0.7));
@@ -86,30 +96,4 @@ body {
 .carousel-control-next {
   width: 12%;
 }
-
-/* Pequeño ajuste responsive */
-@media (max-width: 768px) {
-  .section-momentos {
-    padding: 1.8rem 1.2rem 2.3rem;
-  }
-
-  .card-img-top {
-    height: 260px;
-  }
-}
-
-.card-text {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #ff2f6f;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
-}
-
-.card-img-top {
-    width: 100%;
-    height: auto;
-    object-fit: contain !important;
-    background-color: #000; /* opcional para que se vea bien en fotos verticales */
-}
-
 
