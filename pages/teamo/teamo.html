@@ -4,24 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Te Amo</title>
+
     <link rel="stylesheet" href="../../css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Fondo completo con la foto */
+        .hero {
+            height: 100vh;
+            background-image: url("/pablo/assets/teamo/1.jpg"); /* RUTA PARA GITHUB PAGES */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Oscurecer un poquito para que resalte el texto (podés sacar esto si no te gusta) */
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .hero .content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
+<header></header>
 
-    </header>
+<section class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="content">
+        <h1 class="display-3 fw-bold text-white">Te Amo ❤️</h1>
+        <p class="text-white fs-4">Gracias por cada momento que compartimos.</p>
+    </div>
+</section>
 
-    <section class="hero d-flex align-items-center justify-content-center text-center">
-  <div class="text-white">
-    
-  </div>
-    </section>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="../../index.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script type="module" src="../../index.js"></script>
-    
 </body>
 </html>
