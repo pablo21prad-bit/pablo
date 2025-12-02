@@ -1,14 +1,15 @@
 const navElements = [
-    { title: 'Salidas 🚗 ',    link: 'pablo/pages/salidas/salidas.html' },
-    { title: 'Viajes ✈️',      link: 'pablo/pages/viajes/viajes.html' },
-    { title: 'Nosotros 👫',    link: 'pablo/pages/nosotros/nosotros.html' },
-    { title: 'Amor Mio ♥..',    link: 'pablo/pages/amor/amor.html' },
+    // Asegúrate de que el path comience con /pablo/
+    { title: 'Salidas 🚗 ', link: '/pablo/pages/salidas/salidas.html' },
+    { title: 'Viajes ✈️', link: '/pablo/pages/viajes/viajes.html' },
+    { title: 'Nosotros 👫', link: '/pablo/pages/nosotros/nosotros.html' },
+    { title: 'Amor Mio ♥..', link: '/pablo/pages/amor/amor.html' },
 ];
 
 export const navbar =  `
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/pages/teamo/teamo.html">Te Amo ♥♥♥</a>
+        <a class="navbar-brand" href="/pablo/pages/teamo/teamo.html">Te Amo ♥♥♥</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarNav" aria-controls="navbarNav" 
             aria-expanded="false" aria-label="Toggle navigation">
