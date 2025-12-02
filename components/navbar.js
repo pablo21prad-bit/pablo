@@ -1,9 +1,9 @@
 const navElements = [
-    // Asegúrate de que el path comience con /pablo/
-    { title: 'Salidas 🚗 ', link: '/pablo/pages/salidas/salidas.html' },
-    { title: 'Viajes ✈️', link: '/pablo/pages/viajes/viajes.html' },
-    { title: 'Nosotros 👫', link: '/pablo/pages/nosotros/nosotros.html' },
-    { title: 'Amor Mio ♥..', link: '/pablo/pages/amor/amor.html' },
+    // La raíz de tu sitio es 'https://pablo21prad-bit.github.io/pablo/'
+    { title: 'Salidas 🚗 ',    link: 'https://pablo21prad-bit.github.io/pablo/pages/salidas/salidas.html' },
+    { title: 'Viajes ✈️',      link: 'https://pablo21prad-bit.github.io/pablo/pages/viajes/viajes.html' },
+    { title: 'Nosotros 👫',    link: 'https://pablo21prad-bit.github.io/pablo/pages/nosotros/nosotros.html' },
+    { title: 'Amor Mio ♥..',    link: 'https://pablo21prad-bit.github.io/pablo/pages/amor/amor.html' },
 ];
 
 export const navbar =  `
