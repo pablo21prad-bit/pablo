@@ -1,9 +1,9 @@
 const navElements = [
 
-    { title: 'Salidas 🚗 ',    link: '/pages/salidas/salidas.html' },
-    { title: 'Viajes ✈️',  link: '/pages/viajes/viajes.html' },
-    { title: 'Nosotros 👫', link: '/pages/nosotros/nosotros.html' },
-    { title: 'Amor Mio ♥', link: '/pages/amor/amor.html' },
+    { title: 'Salidas 🚗 ',    link: 'pages/salidas/salidas.html' },
+    { title: 'Viajes ✈️',  link: 'pages/viajes/viajes.html' },
+    { title: 'Nosotros 👫', link: 'pages/nosotros/nosotros.html' },
+    { title: 'Amor Mio ♥', link: 'pages/amor/amor.html' },
 ] 
 
 
