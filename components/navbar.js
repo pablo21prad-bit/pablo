@@ -1,15 +1,14 @@
 const navElements = [
-    // RUTA CORTA (RELATIVA A LA RAÍZ DEL REPO)
-    { title: 'Salidas 🚗 ',    link: 'pages/salidas/salidas.html' },
-    { title: 'Viajes ✈️',      link: 'pages/viajes/viajes.html' },
-    { title: 'Nosotros 👫',    link: 'pages/nosotros/nosotros.html' },
-    { title: 'Amor Mio ♥..',    link: 'pages/amor/amor.html' },
+    { title: 'Salidas 🚗 ',    link: 'pages/salidas/salidas.html' },
+    { title: 'Viajes ✈️',      link: 'pages/viajes/viajes.html' },
+    { title: 'Nosotros 👫',    link: 'pages/nosotros/nosotros.html' },
+    { title: 'Amor Mio ♥..',    link: 'pages/amor/amor.html' },
 ];
 
 export const navbar =  `
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/pablo/pages/teamo/teamo.html">Te Amo ♥♥♥</a>
+        <a class="navbar-brand" href="pages/teamo/teamo.html">Te Amo ♥♥♥</a>   <!-- ACÁ EL ARREGLO -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarNav" aria-controls="navbarNav" 
             aria-expanded="false" aria-label="Toggle navigation">
@@ -18,15 +17,12 @@ export const navbar =  `
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                ${navElements.map(element => {
-                    return `
+                ${navElements.map(element => `
                     <li class="nav-item">
                         <a class="nav-link" href="${element.link}">${element.title}</a>
                     </li>
-                    `
-                }).join('')}
+                `).join('')}
             </ul>
-
         </div>
     </div>
 </nav>`;
