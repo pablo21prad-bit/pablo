@@ -1,6 +1,6 @@
 import { cardComponent } from "../../components/card.js";
 
-fetch("/data/momentos.json")
+fetch("../../data/momentos.json")
   .then(res => res.json())
   .then(data => {
 

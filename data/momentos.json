@@ -5,10 +5,10 @@
       "titulo": "Primeros momentos juntos ",
       "descripcion": "Tenia miedo pero ala vez tenia muchas ganas de conocerte mas, de quedarme y construir algo lindo.",
       "fotos": [
-        "/assets/nosotros/momentos1/1.jpg",
-       "/assets/nosotros/momentos1/2.jpg",
-       "/assets/nosotros/momentos1/3.jpg",
-       "/assets/nosotros/momentos1/4.jpg"
+        "assets/nosotros/momentos1/1.jpg",
+       "assets/nosotros/momentos1/2.jpg",
+       "assets/nosotros/momentos1/3.jpg",
+       "assets/nosotros/momentos1/4.jpg"
       ]
     },
     {
