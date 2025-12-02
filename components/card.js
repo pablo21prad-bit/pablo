@@ -1,9 +1,17 @@
+const PABLO_BASE = "/pablo/";   // raíz del sitio publicado
+
 export function cardComponent(momento) {
 
   const imagenes = momento.fotos.map((foto, index) => {
+    // saco barras iniciales si las tiene (/assets/...)
+    const pathLimpio = foto.replace(/^\/+/, "");  // queda "assets/...”
+
+    // armo la ruta final: /pablo/assets/lo-que-sea.jpg
+    const srcFinal = `${PABLO_BASE}${pathLimpio}`;
+
     return `
       <div class="carousel-item ${index === 0 ? "active" : ""}">
-        <img src="${foto}" class="d-block w-100 card-img-top">
+        <img src="${srcFinal}" class="d-block w-100 card-img-top" alt="">
       </div>
     `;
   }).join("");
