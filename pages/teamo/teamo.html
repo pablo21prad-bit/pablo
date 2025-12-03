@@ -10,62 +10,65 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <style>
-        /* ==============================
-           HERO DE LA IMAGEN – FULL SCREEN
-           ============================== */
-        .hero-container {
-            background: #000;
-            height: 100vh;               /* ✔ pantalla completa */
+
+        /* HERO COMPLETO CON IMAGEN DE FONDO */
+        .hero-teamo {
+            height: 100vh;                                /* pantalla completa */
+            background-image: url("/pablo/assets/teamo/1.png");
+            background-size: contain;                     /* NO recorta */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #000;                       /* rellena bordes */
+            
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            text-align: center;
+
+            padding: 2rem;
         }
 
-        .hero-img {
-            height: 100%;                /* ✔ ocupa toda la pantalla */
-            width: auto;                 /* ✔ mantiene proporción */
-            object-fit: contain;         /* ✔ NO recorta */
-            display: block;
+        /* TITULO */
+        .hero-teamo h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.8);
         }
 
-        /* ==============================
-           SEGUNDA SECCIÓN – TEXTO
-           ============================== */
-        .teamo-hero {
-            padding: 4rem 1rem 5rem;
-            background: radial-gradient(circle at top left, #ffe1ef 0, #fdf8ff 30%, #f3f6ff 60%, #ffe6f0 100%);
-            text-shadow: 0 2px 6px rgba(0,0,0,0.45);
-        }
-
-        .teamo-hero p {
+        /* TEXTO */
+        .hero-teamo p {
+            color: white;
+            font-size: 1.6rem;
             max-width: 900px;
-            margin: 0 auto;
-            white-space: pre-line;       /* ✔ respeta saltos de línea */
+            margin-top: 1.5rem;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.8);
+            white-space: pre-line; /* respeta saltos */
         }
     </style>
+
 </head>
 
 <body>
 
 <header></header>
 
-<section class="hero-container">
-    <img src="/pablo/assets/teamo/1.png" class="hero-img" alt="Te amo">
-</section>
+<section class="hero-teamo">
 
-<section class="teamo-hero text-center">
-    <div class="content">
-        <h1 class="display-3 fw-bold text-white">Te Amo ❤️</h1>
+    <h1>Te Amo ❤️</h1>
 
-        <p class="text-white fs-4">
-Sos una persona increible, hermosa, inteligente y unica..
+    <p>
+Sos una persona increible, hermosa, inteligente y única.
 
-amo cada momento.. desde ver una película hasta planear el próximo viaje, me encanta todo lo que hacemos juntos. Eres mi lugar favorito, mi persona en el mundo y el mejor plan que puedo tener.
+Amo cada momento… desde ver una película hasta planear el próximo viaje.
 
-Simplemente... me encanta que seamos nosotros.
-        </p>
-    </div>
+Me encanta todo lo que hacemos juntos. 
+Sos mi lugar favorito, mi persona en el mundo y el mejor plan que puedo tener.
+
+Simplemente… me encanta que seamos nosotros.
+    </p>
+
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -73,4 +76,5 @@ Simplemente... me encanta que seamos nosotros.
 
 </body>
 </html>
+
 
